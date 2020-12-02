@@ -1,0 +1,44 @@
+//titres
+
+.bigTitle {
+    color: $Dark;
+    font-family: $Poppins;
+    font-size: $BigPx;
+    font-weight: $Semi-Bold;
+
+    &--h1 {
+        @extend .bigTitle;
+        font-weight: $Regular;
+        width: 75%;
+        & span {
+            font-size: $btsPx;
+            font-weight: $Semi-Bold;
+        }
+    }
+}
+
+@media screen and (max-width : $laptop1024)
+{
+    .bigTitle--h1 {
+        font-size: $MarPx;
+
+        & span {
+            font-size: $BigPx;
+        }
+    }
+}
+
+@media screen and (max-width : $tablet618)
+{
+    .bigTitle--h1 {
+        font-size: $PriPx;
+
+        & span {
+            font-size: $NewsPx;
+        }
+    }
+
+    .bigTitle {
+        font-size: $PriPx;
+    }
+}

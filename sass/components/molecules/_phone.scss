@@ -1,0 +1,10 @@
+// Image de la première section
+
+#phone {
+    width: $pphone;
+
+    @media screen and (max-width: $laptop1024 ) {
+        width : 100%;
+    }
+}
+

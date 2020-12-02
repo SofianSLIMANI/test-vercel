@@ -1,0 +1,24 @@
+// première section
+
+.home {
+    height: 100vh;
+
+    & article {
+        padding-bottom: 20vH;
+    }
+
+    @media screen and (max-width : $tablet768)
+    {
+        padding: 10vH 0;
+    }
+
+    @media screen and (max-width : $tablet618)
+    {
+        height: 80vH;
+        padding: 20px 0;
+    }
+
+    @media screen and (max-height: 425px){
+        height: 200vH;
+    }
+}

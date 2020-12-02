@@ -1,0 +1,63 @@
+// icones réseaux sociaux dans le header et footer
+
+.socials {
+    @extend .abso;
+    width: fit-content;
+    left: 3%;
+    bottom: 17%;
+    transform: translate(-50%, 0);
+
+    & > * {
+        margin: 100% 0%;
+    }
+
+    &:after {
+        background: $BlueDeg;
+        content: "";
+        display: block;
+        width: 29%;
+        height: 4vh;
+        margin: 40% 33%;
+    }
+
+    &--foot {
+
+        @extend .flex;
+        @extend .center;
+        padding: 2vH 20%;
+
+        @media screen and (max-width : $tablet768) and (min-width: $tablet618)
+        {
+            padding: 2vH 5%;
+        }
+
+        & .rot90 {
+            transform: rotate(271deg);
+        }
+
+        & > a {
+
+            @extend .flex;
+            @extend .center;
+    
+    
+            &> img {
+                width: 40%;
+                height: 2vH;
+            }
+        }
+    }
+
+    @media screen and (max-width : $tablet768)
+    {
+        bottom: 30%;
+    }
+
+    @media screen and (max-width : $tablet618)
+    {
+        &.flex { // appelle du flex pour override le display flex
+            display: none;
+        }
+        
+    }
+}

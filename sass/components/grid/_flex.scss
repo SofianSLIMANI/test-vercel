@@ -1,0 +1,178 @@
+// Gére tout ce qui est en lien avec le flex (sauf le centrage)
+
+.flex {
+    display: flex;
+
+    &--col {
+        @extend .flex;
+        flex-direction: row;
+
+        &-2 {
+            @extend .flex--col;
+
+            flex-wrap: wrap;
+
+            & nav,
+            div,
+            article,
+            aside {
+                width: $p50;
+            }
+        }
+
+        &-3 {
+            @extend .flex--col;
+            flex-wrap: wrap;
+
+            &>nav,
+            >div,
+            >aside {
+                width: $p33;
+            }
+        }
+
+        &-4 {
+            @extend .flex--col;
+            flex-wrap: nowrap;
+
+            &>nav,
+            >div,
+            >aside,
+            >article {
+                width: $p24;
+
+                &:nth-child(3) {
+                    width: 30%;
+                }
+            }
+        }
+    }
+
+    &--row {
+        @extend .flex;
+        flex-direction: column;
+
+        & #p1 {
+            width: $p75;
+        }
+
+        & #b1 {
+            margin-right: auto;
+            margin-left: $p12;
+            margin-top: $ParPx;
+        }
+
+        & #b2 {
+            margin-right: auto;
+            margin-left: $p12;
+            margin-top: $ParPx;
+        }
+    }
+
+    @media screen and (max-width: $laptop1434) {
+        .phoneside {
+            width: 40%;
+            padding-top: 18vH;
+        }
+
+        .homeside {
+            width: 53%;
+            padding-left: 5%;
+        }
+    }
+
+    @media screen and (max-width: $laptop1024) {
+
+        .weareside {
+            width: 40%;
+        }
+
+        .we {
+            width: 60%;
+        }
+
+        #b2 {
+            margin-left: 12%;
+        }
+
+        &--col-3 article {
+            width: 40%;
+        }
+    }
+
+    @media screen and (max-width : $tablet768) {
+
+        .homeside {
+            width: 100%;
+            padding: 0;
+            align-self: center;
+            text-align: center;
+        }
+
+        .phoneside {
+            padding: 0;
+            margin: auto;
+        }
+
+        #b1 {
+            margin: 3vH auto;
+        }
+    }
+}
+
+@media screen and (max-width : $tablet618) {
+    nav.center.flex {
+        flex-direction: column;
+        padding: 2vH 5%;
+
+        & a {
+            align-self: center;
+            margin: 1vH 0%;
+        }
+    }
+
+    .flex--col-2.weAre {
+        flex-direction: column-reverse;
+
+        & .we,
+        .weareside {
+            width: 90%;
+            align-self: center;
+            margin: 5vH 0%;
+
+            #b2 {
+                margin-left: auto;
+            }
+        }
+    }
+
+    .flex--col-3 article {
+        width: 100%;
+    }
+
+    .flex--col-4 {
+        flex-direction: column;
+
+        &>div,
+        nav,
+        article {
+            width: 80%;
+            margin: 2vH auto;
+            text-align: center;
+
+            &:nth-child(3) {
+                width: 80%;
+            }
+
+            & ul,
+            li {
+                width: 100%;
+                margin: auto;
+            }
+
+            & span {
+                line-break: auto;
+            }
+        }
+    }
+}

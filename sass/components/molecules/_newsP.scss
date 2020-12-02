@@ -1,0 +1,12 @@
+// titre de la newsletter
+
+.newsP {
+    color: $Dark;
+    font-family: $Poppins;
+    font-size: $NewsPx;
+    font-weight: $Regular;
+
+    & span {
+        font-weight: $Semi-Bold;
+    }
+}

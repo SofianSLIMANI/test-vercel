@@ -1,0 +1,29 @@
+// footer
+
+footer  {
+    background-image: url('../../../img/footer.png');
+    background-size: cover;
+    padding: 21vH 0% 10vH 0%;
+    & ul {
+    list-style: none; 
+    }
+}
+
+
+@media screen and (max-width : $tablet768)
+{
+    footer {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-origin: border-box;
+        padding-bottom: 1vH;
+        padding-top: 18vH;
+    }
+}
+
+@media screen and (max-width: $tablet618) {
+    
+    footer {
+        padding-top: 30vH;
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "realisationprojet",
+  "version": "1.0.0",
+  "description": "projet gulp sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nisouc",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.13",
+    "del": "^6.0.0"
+  }
+}

@@ -1,0 +1,30 @@
+// class pour centrer les éléments lorsqu'appellée sur du flex
+
+.center {
+    align-items: center;
+    justify-content: center;
+    
+    & .d75 {
+        @extend .center;
+        @extend .flex;
+        width: 75%;
+        justify-content: end;
+        justify-self: flex-start;
+        margin-top: 3vH;
+    }
+
+    &-news {
+        @extend .center;
+        text-align: center;
+        padding: 15vH 0% 10vH 0%;
+
+        & form {
+            margin: 5vH 0%;
+        }
+
+        @media screen and (max-width : $tablet768)
+        {
+            padding: 10vH 0% 0% 0%;
+        }
+    }
+}

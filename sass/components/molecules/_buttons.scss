@@ -1,0 +1,32 @@
+// boutons du site (sous forme de balises a)
+
+.button {
+
+    background-image: $BlueDeg;
+    color: $White;
+    font-family: $Poppins;
+    font-size: $ButPx;
+    font-weight: $Medium;
+    border-radius: 50px;
+    padding: 1.5vH 40px;
+    border: none;
+
+    &--white {
+        @extend .button;
+        background-image: none;
+        background-color: $White;
+        border: solid 1px $Price;
+        color: $LightBlue;
+    }
+}
+
+.cbutt {
+    padding: 0.5vH 15px;
+    align-self: flex-end;
+}
+
+.pbutt {
+    padding: 1vH 25px;
+}
+
+

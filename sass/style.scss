@@ -1,0 +1,38 @@
+//Helpers
+@import './helpers/_variables.scss';
+
+//Components
+@import './components/_reset.scss';
+@import './components/molecules/_bigTitle.scss';
+@import './components/molecules/_buttons.scss';
+@import './components/molecules/_smallTitle.scss';
+@import './components/molecules/_navA.scss';
+@import './components/molecules/_serv.scss';
+@import './components/molecules/_footTit.scss';
+@import './components/molecules/_market.scss';
+@import './components/molecules/_parag.scss';
+@import './components/molecules/_newsP.scss';
+@import './components/molecules/_logo.scss';
+@import './components/molecules/_touch.scss';
+@import './components/molecules/mouse.scss';
+@import './components/molecules/wX.scss';
+@import './components/molecules/we.scss';
+@import './components/atoms/_cardP.scss';
+@import './components/atoms/_cardTitle.scss';
+@import './components/atoms/cardDiv.scss';
+@import './components/atoms/_price.scss';
+@import './components/atoms/_pricePar.scss';
+@import './components/atoms/priceD.scss';
+@import './components/atoms/priceTitle.scss';
+@import './components/molecules/newsIn.scss';
+@import './components/grid/socials.scss';
+@import './components/molecules/phone.scss'; 
+  
+
+//Grid
+@import './components/grid/home.scss';
+@import './components/grid/footer.scss';
+@import './components/grid/_flex.scss';
+@import './components/grid/_center.scss';
+@import './components/grid/abso.scss';
+@import './components/grid/wwo.scss';

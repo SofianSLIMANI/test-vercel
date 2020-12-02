@@ -1,0 +1,16 @@
+// width 
+
+.w100 {
+    width: $p100;
+}
+
+#w75 {
+    width: $p75;
+}
+
+@media screen and (max-width : $tablet618)
+{
+    #w75 {
+        text-align: center;
+    }
+}

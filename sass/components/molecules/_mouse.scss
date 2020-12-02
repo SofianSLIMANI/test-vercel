@@ -1,0 +1,15 @@
+// picto de souris en bas de l'écran quand on se co
+
+.mouse {
+    background-color: $White;
+    position: absolute;
+    border-radius: 50px;
+    left: 50%;
+    bottom: 0;
+    box-shadow: 1px 11px 46px 2px rgba(126,118,249,0.57);
+
+    @media screen and (max-width : $tablet768)
+    {
+        display: none;
+    }
+}

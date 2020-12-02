@@ -1,0 +1,29 @@
+// texte dans les nav
+
+.navA {
+    color: $White;
+    font-family: $Poppins;
+    font-size: $ParPx;
+    font-weight: $Medium;
+    margin: 0 33px;
+
+    &--foot {
+        @extend .navA;
+        font-weight: $Regular;
+    }
+
+    &--footTit {
+        @extend .navA;
+        font-size: $TitPx;
+        margin-bottom: 3vH;
+    }
+
+    @media screen and (max-width: $laptop1024 ) {
+        margin: 0 15px;
+    }
+
+    @media screen and (max-width : $tablet768){
+        margin: 0% 2%;
+    }
+}
+

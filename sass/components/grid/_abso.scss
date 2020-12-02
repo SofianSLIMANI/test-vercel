@@ -1,0 +1,25 @@
+// gérer les éléments en absolute
+
+.abso {
+    position: absolute;
+    z-index: -2;
+}
+
+.top {
+    top: 0;
+    right: 0;
+    width: 60%;
+}
+
+.bot {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (max-width : $tablet618)
+{
+    .top {
+        width: 90%;
+    }
+}

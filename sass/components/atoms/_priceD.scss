@@ -1,0 +1,10 @@
+// Section avec les cartes pricing
+
+.priceD {
+    width: 100%;
+    background-color: $PriceBlue;
+    @extend .flex--row;
+    @extend .center;
+    padding: 10vH 10%;
+    text-align: center;
+}

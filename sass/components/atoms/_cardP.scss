@@ -1,0 +1,18 @@
+//paragraphes dans les cartes
+
+.cardP {
+    color: $Dark;
+    font-family: $Lato;
+    font-size: $CarPx;
+    font-weight: $Regular;
+    min-height: 15vH;
+
+    @media screen and (max-width: 1000px) {
+        font-size: $ButPx;
+    }
+
+    @media screen and (max-width : $tablet618)
+    {
+        font-size: $CarTPx;
+    }
+}

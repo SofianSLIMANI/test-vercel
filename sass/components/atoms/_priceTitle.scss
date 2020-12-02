@@ -1,0 +1,16 @@
+// titres dans les cartes pricing
+
+
+.priceTitle {
+    color : $Dark;
+    font-family: $Poppins;
+    font-size: $PparPx;
+    font-weight: $Light;
+    width: 100%;
+
+
+    @media (max-width : $desktop1560 ) and (min-width : $laptop1024)
+    {
+        font-size: $CarTPx;
+    }
+}
